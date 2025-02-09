@@ -91,6 +91,5 @@ Go to http://localhost:3000
 ## 🤝 Contributing
 Contributions are welcome! Fork the repo, make changes, and submit a pull request.
 
-## 📜 License
-MIT License.
+
 
