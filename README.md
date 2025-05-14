@@ -62,7 +62,6 @@ Price Forecasting (ARIMA/LSTM Time-Series Analysis)
 Pest Detection (CNN, OpenCV, Google Teachable Machine)
 APIs & Libraries: OpenWeather API, Agmarknet API, Google Translate API
 ## 📸 Screenshots (To Be Added)
-Add UI screenshots once implemented.
 <hr>
 
 ## 🚀 How to Run Locally
