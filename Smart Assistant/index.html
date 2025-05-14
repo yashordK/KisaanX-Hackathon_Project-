@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farm Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="chat-container">
+        <h4 class="text-center">👨‍🌾 Smart Farm Assistant</h4>
+        <div class="chat-box d-flex flex-column" id="chat-box">
+            <div class="message bot-message">
+                👋 Welcome! Tap the mic or type your query.
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <input type="text" id="userInput" class="form-control" placeholder="Type a message...">
+            <button class="mic-button" onclick="startListening()">
+                🎤
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+</html>

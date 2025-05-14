@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sidebar Navigation -->
+<div class="sidebar">
+    <h2>🌱 KisaanX </h2>
+    <ul>
+        <li onclick="navigateTo('weather.html')">📡 Weather Forecast</li>
+        <li onclick="navigateTo('pest-detection.html')">🐞 Pest Detection</li>
+        <li onclick="navigateTo('marketplace.html')">🛒 Farmer Marketplace</li>
+        <li onclick="navigateTo('pricing.html')">📊 Price Prediction</li>
+    </ul>
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+    <header>
+        🌾 Farmer Price Predictor
+    </header>
+
+    <section class="selection-container">
+        <h2>Select Your Crop</h2>
+        <select id="cropSelect">
+            <option value="">-- Choose a Crop --</option>
+            <option value="Wheat">Wheat</option>
+            <option value="Rice">Rice</option>
+            <option value="Tomato">Tomato</option>
+            <option value="Potato">Potato</option>
+        </select>
+        <button onclick="fetchPrediction()">Predict Price</button>
+    </section>
+
+    <!-- Result Display -->
+    <section id="result-container" class="result-container">
+        <img id="crop-image" class="crop-image" src="" alt="">
+        <h3>📊 Expected Prices</h3>
+        <p id="result-text">Loading...</p>
+    </section>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

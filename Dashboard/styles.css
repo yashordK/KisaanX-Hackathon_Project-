@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #ffffff;
+    box-shadow: 5px 0px 15px rgba(0, 255, 0, 0.3);
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #00cc66;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.sidebar ul li:hover {
+    background: #00ff7f;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    width: calc(100% - 270px);
+    text-align: center;
+    padding: 30px;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.5);
+    border-bottom: 4px solid #00ff7f;
+    border-radius: 10px;
+}
+
+/* Weather & Season Section */
+.weather-season {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    box-shadow: 0px 4px 12px rgba(0, 255, 0, 0.3);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 16px rgba(0, 255, 0, 0.4);
+    transform: scale(1.02);
+}
+
+/* Crop Recommendation Section */
+.crop-recommendation {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 255, 0, 0.3);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.crop-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.crop-item {
+    background: #e8ffe8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.3);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.crop-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 255, 127, 0.5);
+}
+
+/* Crop Image */
+.crop-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 127, 0.5);
+    margin-bottom: 10px;
+}
+
+.crop-image:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

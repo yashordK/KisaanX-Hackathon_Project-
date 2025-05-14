@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>KisaanX</h2>
+        <ul>
+            <li><a href="#">📊 Dashboard</a></li>
+            <li><a href="../Price Prediction/index.html">💰 Price Prediction</a></li>
+            <li><a href="#">🌾 Crop Recommendation</a></li>
+            <li><a href="#">🛒 Farmer Marketplace</a></li>
+            <li><a href="#">🤖 AI Assistant</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Welcome, Farmer! 🚜</h1>
+            <p>Your smart assistant for farming decisions</p>
+        </header>
+
+        <!-- Weather & Season Section -->
+        <div class="weather-season">
+            <div class="card weather">
+                <h3>🌤 Current Weather</h3>
+                <p id="weather-info">Loading...</p>
+            </div>
+            <div class="card season">
+                <h3>📅 Current Season</h3>
+                <p id="season-info">Detecting season...</p>
+            </div>
+        </div>
+
+        <!-- Best Crops to Grow -->
+        <div class="crop-recommendation">
+            <h2>🌱 Best Crops to Grow This Season</h2>
+            <div class="crop-list" id="crop-list">
+                <!-- Crops will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
